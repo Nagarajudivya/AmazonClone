@@ -1,0 +1,119 @@
+.admin-page {
+    padding: 2rem;
+    max-width: 1200px;
+}
+
+.admin-page-header {
+    margin-bottom: 2rem;
+}
+
+.admin-page-header h1 {
+    font-size: 1.75rem;
+    color: #1a1a2e;
+    margin-bottom: 0.3rem;
+}
+
+.admin-page-header p {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.admin-error {
+    color: var(--color-danger);
+    padding: 1rem;
+    background: #fff0f0;
+    border-radius: 6px;
+}
+
+/* ---- Stat Cards ---- */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid transparent;
+    transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.stat-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+.stat-card-blue  { border-left-color: #3b82f6; }
+.stat-card-green { border-left-color: #10b981; }
+.stat-card-orange{ border-left-color: #f59e0b; }
+.stat-card-red   { border-left-color: #ef4444; }
+
+.stat-card-icon {
+    font-size: 2.2rem;
+    flex-shrink: 0;
+}
+
+.stat-card-label {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin: 0 0 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.stat-card-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+/* ---- Quick Actions ---- */
+.admin-quick-actions h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #374151;
+}
+
+.admin-quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.quick-action-card {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #374151;
+    transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.quick-action-card:hover {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.quick-action-card span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.quick-action-card p {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0;
+}

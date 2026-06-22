@@ -1,0 +1,12 @@
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    /* Hide the main Navbar for admin pages — sidebar is the nav */
+}
+
+.admin-layout-content {
+    flex: 1;
+    background: #f4f5f7;
+    min-width: 0;
+    overflow-y: auto;
+}
