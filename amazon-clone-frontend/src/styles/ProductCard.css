@@ -87,3 +87,31 @@
 .product-card-stock.out-stock {
     color: var(--color-danger);
 }
+
+.product-card-add-btn {
+    margin-top: 0.6rem;
+    background: var(--color-primary);
+    color: #111;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s, background 0.2s;
+    width: 100%;
+}
+
+.product-card-add-btn:hover:not(:disabled) {
+    opacity: 0.85;
+}
+
+.product-card-add-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.product-card-add-btn--success {
+    background: var(--color-success);
+    color: #fff;
+}

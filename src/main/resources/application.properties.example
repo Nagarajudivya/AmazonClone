@@ -2,6 +2,8 @@ spring.application.name=amazon
 
 # PostgreSQL
 spring.datasource.url=jdbc:postgresql://localhost:5432/amazon_clone
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
 spring.datasource.driver-class-name=org.postgresql.Driver
 
 # JPA / Hibernate
@@ -11,11 +13,15 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.properties.hibernate.format_sql=true
 
 # JWT
+jwt.secret=YOUR_JWT_SECRET
 jwt.access-token-expiration=900000
 jwt.refresh-token-expiration=604800000
 
 # AWS S3
-aws.s3.region=ap-south-1
+aws.s3.access-key=YOUR_AWS_ACCESS_KEY
+aws.s3.secret-key=YOUR_AWS_SECRET_KEY
+aws.s3.region=YOUR_AWS_REGION
+aws.s3.bucket-name=YOUR_S3_BUCKET_NAME
 
 # File Upload
 spring.servlet.multipart.enabled=true
